@@ -1,0 +1,26 @@
+<html>
+	<head></head>
+	<body>
+		<canvas id="gl_canvas">
+			Could not load gl canvas.
+		</canvas>
+	</body>
+
+	<script id="vertex-shader" type="x-shader/vertex-shader">
+		attribute vec4 aPosition;
+
+		void main(void) {
+			gl_Position = aPosition;
+		}
+	</script>
+	
+	<script id="fragment-shader" type="x-shader/fragment-shader">
+		precision mediump float;
+
+		void main(void) {
+			gl_Color = vec4(1.0, 1.0, 1.0, 1.0);
+		}
+	</script>
+
+
+</html>
